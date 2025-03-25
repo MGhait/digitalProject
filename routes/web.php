@@ -23,18 +23,34 @@ use Illuminate\Support\Facades\Route;
  * Front Site Routes
  */
 Route::prefix('/')->name('front.')->group(function () {
+
     # ======================================= index page
     Route::view('', 'front.index')->name('index');
+
     # ======================================= about page
     Route::view('about', 'front.about')->name('about');
+
     # ======================================= contact page
     Route::view('contact', 'front.contact')->name('contact');
+
     # ======================================= projects page
     Route::view('projects', 'front.projects')->name('projects');
+
     # ======================================= services page
     Route::view('services', 'front.services')->name('services');
+
     # ======================================= team page
     Route::view('team', 'front.team')->name('team');
+
     # ======================================= testimonial page
     Route::view('testimonial', 'front.testimonial')->name('testimonial');
+});
+/*
+ * Dashboard Routes
+ */
+Route::prefix('/admin')->name('admin.')->group(function () {
+
+    # ======================================= index page
+    Route::view('', 'admin.index')->name('index');
+
 });
