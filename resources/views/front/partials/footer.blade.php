@@ -4,9 +4,9 @@
         <div class="row g-5">
             <div class="col-md-6 col-lg-3">
                 <p class="section-title text-white h5 mb-4">Address<span></span></p>
-                <p><i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</p>
-                <p><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
-                <p><i class="fa fa-envelope me-3"></i>info@example.com</p>
+                <p><i class="fa fa-map-marker-alt me-3"></i>19 Hendawy St, Mansura</p>
+                <p><i class="fa fa-phone-alt me-3"></i>+010 0901 5740</p>
+                <p><i class="fa fa-envelope me-3"></i>admin@mghait.com</p>
                 <div class="d-flex pt-2">
                     <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
                     <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
@@ -16,8 +16,8 @@
             </div>
             <div class="col-md-6 col-lg-3">
                 <p class="section-title text-white h5 mb-4">Quick Link<span></span></p>
-                <a class="btn btn-link" href="">About Us</a>
-                <a class="btn btn-link" href="">Contact Us</a>
+                <a class="btn btn-link" href="{{ route('front.about') }}">About Us</a>
+                <a class="btn btn-link" href="{{ route('front.contact') }}">Contact Us</a>
                 <a class="btn btn-link" href="">Privacy Policy</a>
                 <a class="btn btn-link" href="">Terms & Condition</a>
                 <a class="btn btn-link" href="">Career</a>
