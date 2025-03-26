@@ -51,6 +51,9 @@ Route::prefix('/')->name('front.')->group(function () {
 Route::prefix('/admin')->name('admin.')->group(function () {
 
     # ======================================= index page
-    Route::view('', 'admin.index')->name('index');
+    Route::view('/', 'admin.index')->name('index');
+
+    # ======================================= Login page
+    Route::view('/login', 'admin.auth.login')->name('login');
 
 });
