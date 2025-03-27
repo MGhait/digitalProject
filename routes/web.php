@@ -49,11 +49,12 @@ Route::prefix('/')->name('front.')->group(function () {
  * Dashboard Routes
  */
 Route::prefix('/admin')->name('admin.')->group(function () {
-
-    # ======================================= index page
-    Route::view('/', 'admin.index')->name('index');
+    Route::middleware(['admin'])->group(function () {
+        # ======================================= index page
+        Route::view('/', 'admin.index')->name('index');
+    });
 
     # ======================================= Login page
-    Route::view('/login', 'admin.auth.login')->name('login');
+    Route::view('/login', 'admin.auth.login')->middleware('guest:admin')->name('login');
 
 });
