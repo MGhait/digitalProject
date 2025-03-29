@@ -53,8 +53,11 @@ Route::prefix('/admin/')->name('admin.')->group(function () {
         # ======================================= index page
         Route::view('', 'admin.index')->name('index');
 
-        # ======================================= index page
-        Route::view('/settings', 'admin.settings.index')->name('settings');
+        # ======================================= settings page
+        Route::view('settings', 'admin.settings.index')->name('settings');
+
+        # ======================================= skills page
+        Route::view('skills', 'admin.skills.index')->name('skills');
     });
 
     # ======================================= Login page
