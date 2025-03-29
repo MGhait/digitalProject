@@ -1,6 +1,7 @@
 @extends('admin.master')
 
 @section('title', 'Index')
+@section('index-active', 'active')
 
 @section('content')
     <!-- Content -->

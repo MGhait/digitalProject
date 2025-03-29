@@ -48,10 +48,13 @@ Route::prefix('/')->name('front.')->group(function () {
 /*
  * Dashboard Routes
  */
-Route::prefix('/admin')->name('admin.')->group(function () {
+Route::prefix('/admin/')->name('admin.')->group(function () {
     Route::middleware(['admin'])->group(function () {
         # ======================================= index page
-        Route::view('/', 'admin.index')->name('index');
+        Route::view('', 'admin.index')->name('index');
+
+        # ======================================= index page
+        Route::view('/settings', 'admin.settings.index')->name('settings');
     });
 
     # ======================================= Login page

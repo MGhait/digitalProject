@@ -19,3 +19,35 @@
 
 <!-- Place this tag in your head or just before your close body tag. -->
 <script async defer src="https://buttons.github.io/buttons.js"></script>
+@livewireScripts
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        Livewire.hook('morph.updated', ({ el, component }) => {
+            const SuccessAlert = document.querySelector('.success-alert');
+            if (SuccessAlert) {
+                console.log("SuccessAlert found");
+                setTimeout(() => {
+                    SuccessAlert.style.display = 'none';
+                }, 2000);
+            } else {
+                console.log("SuccessAlert not found");
+            }
+
+        })
+    });
+
+    // document.addEventListener('livewire:init', function () {
+    //     Livewire.hook('afterDomUpdate', () => {
+    //         const SuccessAlert = document.querySelector('.success-alert');
+    //
+    //         if (SuccessAlert) {
+    //             console.log("SuccessAlert found");
+    //             setTimeout(() => {
+    //                 SuccessAlert.style.display = 'none';
+    //             }, 2000);
+    //         } else {
+    //             console.log("SuccessAlert not found");
+    //         }
+    //     });
+    // });
+</script>
