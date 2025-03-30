@@ -24,14 +24,14 @@
                         @livewire('admin.skills.skills-create')
             </div>
 
-            <div class="row">
+
                 <div class="card mb-4">
                     <div class="card-body">
                         @livewire('admin.skills.skills-data')
 
                     </div>
                 </div>
-            </div>
+            @livewire('admin.skills.skills-update')
         </div>
     </div>
     <!-- Content wrapper -->

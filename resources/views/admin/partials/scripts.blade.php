@@ -54,6 +54,10 @@
             $('#createModal').modal('toggle');
         });
     });
+
+    window.addEventListener('editModalToggle', event => {
+        $('#editModal').modal('toggle');
+    })
     // window.addEventListener('CreateModelToggle', event =>{
     //     $('#createModal').modal('toggle');
     // })
