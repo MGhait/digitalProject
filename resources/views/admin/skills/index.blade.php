@@ -32,6 +32,7 @@
                     </div>
                 </div>
             @livewire('admin.skills.skills-update')
+            @livewire('admin.skills.skills-delete')
         </div>
     </div>
     <!-- Content wrapper -->
