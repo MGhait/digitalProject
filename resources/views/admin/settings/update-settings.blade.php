@@ -22,9 +22,7 @@
             placeholder="Email"
             wire:model="settings.email"
         />
-        @error('settings.email')
-            <span class="text-danger">{{ $message }}</span>
-        @enderror
+        @include('admin.error',['property' => 'settings.email'])
     </div>
     <div class="col-md-6 mt-2">
         <label class="form-label">Address</label>
@@ -34,9 +32,7 @@
             placeholder="Address"
             wire:model="settings.address"
         />
-        @error('settings.address')
-            <span class="text-danger">{{ $message }}</span>
-        @enderror
+        @include('admin.error',['property' => 'settings.address'])
     </div>
     <div class="col-md-6 mt-2">
         <label class="form-label">Phone</label>
@@ -46,9 +42,7 @@
             placeholder="Phone"
             wire:model="settings.phone"
         />
-        @error('settings.phone')
-            <span class="text-danger">{{ $message }}</span>
-        @enderror
+        @include('admin.error',['property' => 'settings.phone'])
     </div>
     <div class="col-md-6 mt-2">
         <label class="form-label">Facebook</label>
@@ -58,9 +52,7 @@
             placeholder="Facebook"
             wire:model="settings.facebook"
         />
-        @error('settings.facebook')
-            <span class="text-danger">{{ $message }}</span>
-        @enderror
+        @include('admin.error',['property' => 'settings.facebook'])
     </div>
     <div class="col-md-6 mt-2">
         <label class="form-label">Twitter</label>
@@ -70,9 +62,7 @@
             placeholder="Twitter"
             wire:model="settings.twitter"
         />
-        @error('settings.twitter')
-            <span class="text-danger">{{ $message }}</span>
-        @enderror
+        @include('admin.error',['property' => 'settings.twitter'])
     </div>
     <div class="col-md-6 mt-2">
         <label class="form-label">Linkedin</label>
@@ -82,9 +72,7 @@
             placeholder="Linkedin"
             wire:model="settings.linkedin"
         />
-        @error('settings.linkedin')
-            <span class="text-danger">{{ $message }}</span>
-        @enderror
+        @include('admin.error',['property' => 'settings.linkedin'])
     </div>
     <div class="col-md-6 mt-2">
         <label class="form-label">Instagram</label>
@@ -94,9 +82,7 @@
             placeholder="Instagram"
             wire:model="settings.instagram"
         />
-        @error('settings.instagram')
-            <span class="text-danger">{{ $message }}</span>
-        @enderror
+        @include('admin.error',['property' => 'settings.instagram'])
     </div>
     <div class="col-md-12 mt-4">
         <button class="btn btn-primary">Submit</button>
