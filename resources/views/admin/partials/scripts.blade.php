@@ -62,4 +62,7 @@
     window.addEventListener('deleteModalToggle', event => {
         $('#deleteModal').modal('toggle');
     })
+    window.addEventListener('show-modal-toggle', event => {
+        $('#showModal').modal('toggle');
+    })
 </script>
