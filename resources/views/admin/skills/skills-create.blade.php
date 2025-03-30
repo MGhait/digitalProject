@@ -15,15 +15,15 @@
                     <div class="row">
                         <div class="col-md-6 mb-0">
                             <label class="form-label">Name</label>
-                            <input type="text" class="form-control" placeholder="Name" wire:model="skill.name" />
-                            @error('skill.name')
+                            <input type="text" class="form-control" placeholder="Name" wire:model="name" />
+                            @error('name')
                                 <span class="text-danger">{{ $message }}</span>
                             @enderror
                         </div>
                         <div class="col-md-6 mb-0">
                             <label class="form-label">Progress</label>
-                            <input type="number"  class="form-control" placeholder="10" min="1" max="100" wire:model="skill.progress" />
-                            @error('skill.progress')
+                            <input type="number"  class="form-control" placeholder="10" min="1" max="100" wire:model="progress" />
+                            @error('progress')
                             <span class="text-danger">{{ $message }}</span>
                             @enderror
                         </div>

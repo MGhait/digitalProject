@@ -50,7 +50,7 @@
     //     });
     // });
     document.addEventListener('DOMContentLoaded', () => {
-        window.addEventListener('CreateModelToggle', event => {
+        window.addEventListener('CreateModalToggle', event => {
             $('#createModal').modal('toggle');
         });
     });
