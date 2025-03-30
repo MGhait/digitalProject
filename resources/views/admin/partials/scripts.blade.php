@@ -35,7 +35,6 @@
 
         })
     });
-
     // document.addEventListener('livewire:init', function () {
     //     Livewire.hook('afterDomUpdate', () => {
     //         const SuccessAlert = document.querySelector('.success-alert');
@@ -50,4 +49,12 @@
     //         }
     //     });
     // });
+    document.addEventListener('DOMContentLoaded', () => {
+        window.addEventListener('CreateModelToggle', event => {
+            $('#createModal').modal('toggle');
+        });
+    });
+    // window.addEventListener('CreateModelToggle', event =>{
+    //     $('#createModal').modal('toggle');
+    // })
 </script>
