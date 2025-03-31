@@ -10,10 +10,10 @@ class SkillsCreate extends Component
 //    public $skill;
     public $name;
     public $progress;
-    public function mount()
-    {
-        $this->skill = new Skill();
-    }
+//    public function mount()
+//    {
+//        $this->skill = new Skill();
+//    }
 
     public function rules()
     {
@@ -30,7 +30,7 @@ class SkillsCreate extends Component
         Skill::create($data);
         $this->reset(['name', 'progress']);
         //hide modal
-        $this->dispatch('CreateModalToggle');
+        $this->dispatch('create-modal-toggle');
         // refresh skills in data-component
         $this->dispatch('refreshData')->to(SkillsData::class);
     }

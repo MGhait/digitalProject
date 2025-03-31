@@ -17,7 +17,7 @@ class SkillsUpdate extends Component
         // reset validation first
         $this->resetValidation();
         // show edit modal
-        $this->dispatch('editModalToggle');
+        $this->dispatch('edit-modal-toggle');
     }
 
     public function rules()
@@ -33,7 +33,7 @@ class SkillsUpdate extends Component
         // save in db
         $this->skill->update($data);
         //hide modal
-        $this->dispatch('editModalToggle');
+        $this->dispatch('edit-modal-toggle');
         // can add some alerts here later ^_^
         // refresh skills in data-component
         $this->dispatch('refreshData')->to(SkillsData::class);

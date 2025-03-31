@@ -28,6 +28,10 @@
     <link rel="stylesheet" href="{{ asset('admin-assets') }}//vendor/css/theme-default.css" class="template-customizer-theme-css" />
     <link rel="stylesheet" href="{{ asset('admin-assets') }}//css/demo.css" />
 
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
     <!-- Vendors CSS -->
     <link rel="stylesheet" href="{{ asset('admin-assets') }}//vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
 

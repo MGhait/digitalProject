@@ -15,7 +15,9 @@
                 <tbody class="table-border-bottom-0">
                 @foreach($data as $record)
                     <tr>
-                        <td><i class="fab fa-angular fa-lg text-danger me-3"></i> <strong>{{ $record->name }}</strong></td>
+                        <td>
+                            <strong>{{ $record->name }}</strong>
+                        </td>
                         <td>{{ $record->progress }}</td>
                         <td>
                             <div class="dropdown">

@@ -7,7 +7,9 @@
             <table class="table">
                 <thead>
                 <tr>
-                    <th width="90%">Email</th>
+                    <th width="50%">Name</th>
+                    <th width="20%">Count</th>
+                    <th width="20%">Icon</th>
                     <th>Actions</th>
                 </tr>
                 </thead>
@@ -15,7 +17,11 @@
                 @foreach($data as $record)
                     <tr>
                         <td>
-                            <strong>{{ $record->email }}</strong>
+                            <strong>{{ $record->name }}</strong>
+                        </td>
+                        <td>{{ $record->count }}</td>
+                        <td>
+                            <i class="{{ $record->icon }} fa-2x text-secondary mb-1 mt-1"></i>
                         </td>
                         <td>
                             <div class="dropdown">
@@ -25,11 +31,15 @@
                                 </button>
                                 <div class="dropdown-menu">
                                     <a class="dropdown-item" href="#"
-                                       wire:click.prevent="$dispatch('SubscriberDelete', { id: {{ $record->id }} })">
+                                       wire:click.prevent="$dispatch('updateCounter', { id: {{ $record->id }} })">
+                                        <i class="bx bx-edit-alt me-1"></i>
+                                        Edit
+                                    </a>
+                                    <a class="dropdown-item" href="#"
+                                       wire:click.prevent="$dispatch('deleteCounter', { id: {{ $record->id }} })">
                                         <i class="bx bx-trash me-1"></i>
                                         Delete
                                     </a>
-
                                 </div>
                             </div>
                         </td>

@@ -100,6 +100,14 @@
             </a>
         </li>
 
+        <!-- Counters -->
+        <li class="menu-item @yield('counters-active')">
+            <a href="{{route('admin.counters')}}" class="menu-link">
+                <i class="menu-icon tf-icons bx bx-cog"></i>
+                <div data-i18n="Analytics">Counters</div>
+            </a>
+        </li>
+
 {{--        <li class="menu-header small text-uppercase">--}}
 {{--            <span class="menu-header-text">Pages</span>--}}
 {{--        </li>--}}

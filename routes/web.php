@@ -61,6 +61,9 @@ Route::prefix('/admin/')->name('admin.')->group(function () {
 
         # ======================================= subscribers page
         Route::view('subscribers', 'admin.subscribers.index')->name('subscribers');
+
+        # ======================================= counters page
+        Route::view('counters', 'admin.counters.index')->name('counters');
     });
 
     # ======================================= Login page

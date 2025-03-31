@@ -49,13 +49,17 @@
     //         }
     //     });
     // });
-    document.addEventListener('DOMContentLoaded', () => {
-        window.addEventListener('CreateModalToggle', event => {
-            $('#createModal').modal('toggle');
-        });
-    });
+    // document.addEventListener('DOMContentLoaded', () => {
+    //     window.addEventListener('CreateModalToggle', event => {
+    //         $('#createModal').modal('toggle');
+    //     });
+    // });
 
-    window.addEventListener('editModalToggle', event => {
+    window.addEventListener('create-modal-toggle', event => {
+        $('#createModal').modal('toggle');
+    })
+
+    window.addEventListener('edit-modal-toggle', event => {
         $('#editModal').modal('toggle');
     })
 
