@@ -11,7 +11,7 @@ class SkillsDelete extends Component
     protected $listeners = ['skillDelete'];
     public function skillDelete($id){
         $this->skill = Skill::find($id);
-        $this->dispatch('deleteModalToggle');
+        $this->dispatch('delete-modal-toggle');
     }
 
     public function submit()
@@ -21,7 +21,7 @@ class SkillsDelete extends Component
         // cleaning up may be useful for some cases,but it works fine without it for me
         $this->reset('skill');
         //hide modal
-        $this->dispatch('deleteModalToggle');
+        $this->dispatch('delete-modal-toggle');
 
         // refresh skills in data-component
         $this->dispatch('refreshData')->to(SkillsData::class);

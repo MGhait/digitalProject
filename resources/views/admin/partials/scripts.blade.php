@@ -59,7 +59,7 @@
         $('#editModal').modal('toggle');
     })
 
-    window.addEventListener('deleteModalToggle', event => {
+    window.addEventListener('delete-modal-toggle', event => {
         $('#deleteModal').modal('toggle');
     })
     window.addEventListener('show-modal-toggle', event => {
