@@ -87,7 +87,7 @@
         <!-- Skills -->
         <li class="menu-item @yield('skills-active')">
             <a href="{{route('admin.skills')}}" class="menu-link">
-                <i class="menu-icon tf-icons bx bx-cog"></i>
+                <i class="menu-icon tf-icons bx bxs-cube"></i>
                 <div data-i18n="Analytics">Skills</div>
             </a>
         </li>
@@ -95,7 +95,7 @@
         <!-- Subscribers -->
         <li class="menu-item @yield('subscribers-active')">
             <a href="{{route('admin.subscribers')}}" class="menu-link">
-                <i class="menu-icon tf-icons bx bx-cog"></i>
+                <i class="menu-icon tf-icons bx bx-subdirectory-right"></i>
                 <div data-i18n="Analytics">Subscribers</div>
             </a>
         </li>
@@ -103,7 +103,7 @@
         <!-- Counters -->
         <li class="menu-item @yield('counters-active')">
             <a href="{{route('admin.counters')}}" class="menu-link">
-                <i class="menu-icon tf-icons bx bx-cog"></i>
+                <i class="menu-icon tf-icons bx bx-collection"></i>
                 <div data-i18n="Analytics">Counters</div>
             </a>
         </li>
@@ -111,7 +111,7 @@
         <!-- Services -->
         <li class="menu-item @yield('services-active')">
             <a href="{{route('admin.services')}}" class="menu-link">
-                <i class="menu-icon tf-icons bx bx-cog"></i>
+                <i class="menu-icon tf-icons bx bx-abacus"></i>
                 <div data-i18n="Analytics">Services</div>
             </a>
         </li>
@@ -119,7 +119,7 @@
         <!-- Messages -->
         <li class="menu-item @yield('messages-active')">
             <a href="{{route('admin.messages')}}" class="menu-link">
-                <i class="menu-icon tf-icons bx bx-cog"></i>
+                <i class="menu-icon tf-icons bx bx-message-detail"></i>
                 <div data-i18n="Analytics">Messages</div>
             </a>
         </li>
@@ -127,7 +127,7 @@
         <!-- Categories -->
         <li class="menu-item @yield('categories-active')">
             <a href="{{route('admin.categories')}}" class="menu-link">
-                <i class="menu-icon tf-icons bx bx-cog"></i>
+                <i class="menu-icon tf-icons bx bx-dock-left"></i>
                 <div data-i18n="Analytics">Categories</div>
             </a>
         </li>
@@ -135,7 +135,7 @@
         <!-- Projects -->
         <li class="menu-item @yield('projects-active')">
             <a href="{{route('admin.projects')}}" class="menu-link">
-                <i class="menu-icon tf-icons bx bx-cog"></i>
+                <i class="menu-icon tf-icons bx bx-detail"></i>
                 <div data-i18n="Analytics">Projects</div>
             </a>
         </li>
