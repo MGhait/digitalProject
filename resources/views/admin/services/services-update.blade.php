@@ -12,8 +12,8 @@
     </div>
     <div class="col-md-12 mt-3">
         <label class="form-label">Desciption</label>
-        <input type="text" class="form-control" placeholder="Description"
-               wire:model="description"/>
+        <textarea class="form-control" placeholder="Description"
+                  wire:model="description"></textarea>
         @include('admin.error',['property' => 'description'])
     </div>
 </x-update-modal>

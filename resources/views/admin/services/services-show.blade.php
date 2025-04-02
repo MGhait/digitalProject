@@ -10,7 +10,8 @@
     </div>
     <div class="col-md-12 mt-3">
         <label class="form-label">Desciption</label>
-        <input type="text" class="form-control" placeholder="Description"
-               wire:model="description" disabled/>
+        <textarea class="form-control" placeholder="Description"
+                  wire:model="description" disabled></textarea>
+        @include('admin.error',['property' => 'description'])
     </div>
 </x-show-modal>
