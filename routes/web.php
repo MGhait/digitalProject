@@ -67,6 +67,9 @@ Route::prefix('/admin/')->name('admin.')->group(function () {
 
         # ======================================= services page
         Route::view('services', 'admin.services.index')->name('services');
+
+        # ======================================= messages page
+        Route::view('messages', 'admin.messages.index')->name('messages');
     });
 
     # ======================================= Login page
