@@ -4,7 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Category extends Model
+class Project extends Model
 {
     //
     /**
@@ -12,7 +12,7 @@ class Category extends Model
          *
          * @var string
          */
-        protected $table = 'categories';
+        protected $table = 'projects';
 
         /**
          * The primary key associated with the table.
@@ -59,8 +59,8 @@ class Category extends Model
         ];
 
         ##--------------------------------- RELATIONSHIPS
-         public function projects() {
-             return $this->hasMany(Project::class);
+         public function category() {
+             return $this->belongsTo(Category::class);
          }
 
 

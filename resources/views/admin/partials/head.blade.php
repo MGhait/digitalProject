@@ -27,6 +27,14 @@
     <link rel="stylesheet" href="{{ asset('admin-assets') }}//vendor/css/core.css" class="template-customizer-core-css" />
     <link rel="stylesheet" href="{{ asset('admin-assets') }}//vendor/css/theme-default.css" class="template-customizer-theme-css" />
     <link rel="stylesheet" href="{{ asset('admin-assets') }}//css/demo.css" />
+    <style>
+        .image-preview {
+            max-height: 150px;
+            width: auto;
+            display: block;
+            margin: 0;
+        }
+    </style>
 
     <!-- Icon Font Stylesheet -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
