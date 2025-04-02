@@ -124,6 +124,14 @@
             </a>
         </li>
 
+        <!-- Categories -->
+        <li class="menu-item @yield('categories-active')">
+            <a href="{{route('admin.categories')}}" class="menu-link">
+                <i class="menu-icon tf-icons bx bx-cog"></i>
+                <div data-i18n="Analytics">Categories</div>
+            </a>
+        </li>
+
 {{--        <li class="menu-header small text-uppercase">--}}
 {{--            <span class="menu-header-text">Pages</span>--}}
 {{--        </li>--}}
