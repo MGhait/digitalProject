@@ -30,7 +30,7 @@
                 </div>
             @livewire('admin.projects.projects-update')
             @livewire('admin.projects.projects-delete')
-{{--            @livewire('admin.projects.projects-show')--}}
+            @livewire('admin.projects.projects-show')
         </div>
     </div>
     <!-- Content wrapper -->
