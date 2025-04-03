@@ -140,6 +140,22 @@
             </a>
         </li>
 
+        <!-- Testimonials -->
+        <li class="menu-item @yield('testimonials-active')">
+            <a href="{{route('admin.testimonials')}}" class="menu-link">
+                <i class="menu-icon tf-icons bx bx-detail"></i>
+                <div data-i18n="Analytics">Testimonials</div>
+            </a>
+        </li>
+
+        <!-- Members -->
+        <li class="menu-item @yield('members-active')">
+            <a href="{{route('admin.members')}}" class="menu-link">
+                <i class="menu-icon tf-icons bx bx-detail"></i>
+                <div data-i18n="Analytics">Members</div>
+            </a>
+        </li>
+
 {{--        <li class="menu-header small text-uppercase">--}}
 {{--            <span class="menu-header-text">Pages</span>--}}
 {{--        </li>--}}
