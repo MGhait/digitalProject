@@ -1,5 +1,5 @@
 {{-- If you look to others for fulfillment, you will never truly be fulfilled. --}}
-<x-create-modal title="Add New Project">
+<x-create-modal title="Add New Testimonial">
     <div class="col-md-6 mb-0">
         <label class="form-label">Name</label>
         <input type="text" class="form-control" placeholder="Name" wire:model="name"/>
