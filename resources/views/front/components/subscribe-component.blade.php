@@ -1,6 +1,4 @@
 <form wire:submit.prevent="submit">
-    <input class="form-control border-0 rounded-pill w-100 ps-4 pe-5" type="text" placeholder="Enter Your Email"
-           style="height: 48px;" wire:model="email">
     @if(session()->has('message'))
         <div class="alert alert-success mt-3 transition duration-300"
              x-data="{ show: true }"
@@ -9,6 +7,8 @@
             {{ session('message') }}
         </div>
     @endif
+    <input class="form-control border-0 rounded-pill w-100 ps-4 pe-5" type="text" placeholder="Enter Your Email"
+           style="height: 48px;" wire:model="email">
     @error("email")
     <div class="alert alert-danger mt-3 transition duration-300"
          x-data="{ show: true }"
